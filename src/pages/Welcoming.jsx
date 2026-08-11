@@ -1,4 +1,6 @@
+import {useNavigate} from "react-router-dom"
 export default function Welcoming() {
+  const Navigate = useNavigate()
   return (
     <>
       <header className="w-full flex items-center justify-center py-2">
@@ -41,7 +43,11 @@ export default function Welcoming() {
         transition-all duration-200
         flex items-center justify-center gap-10
         text-2xl font-bold  
-        ">
+        "
+        onClick={()=>{
+          Navigate('/homepage')
+        }}
+        >
           Continue with google
           <img src="/google.png" className="w-10 "/>
         </button>
