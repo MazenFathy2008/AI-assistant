@@ -1,6 +1,6 @@
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 export default function Welcoming() {
-  const Navigate = useNavigate()
+  const Navigate = useNavigate();
   return (
     <>
       <header className="w-full flex items-center justify-center py-2">
@@ -29,12 +29,15 @@ export default function Welcoming() {
     "
         />
         <section className="w-full flex flex-col justify-center items-center gap-3 ">
-          <p className=" z-100 text-7xl opacity-100 text-[#242424] font-bold">
+          <p className=" z-100 text-3xl md:text-7xl opacity-100 text-[#242424] font-bold">
             Welcome to Chat Egy
           </p>
-          <p className="text-3xl text-[#000000]">Learn.Ask.Achieve</p>
+          <p className="text-lg md:text-3xl text-[#000000]">
+            Learn.Ask.Achieve
+          </p>
         </section>
-        <button className="w-100 h-20 bg-white 
+        <button
+          className="w-100 h-20 bg-white 
         z-100 cursor-pointer 
         shadow-[1px_1px_10px_black] 
         rounded-2xl 
@@ -44,12 +47,12 @@ export default function Welcoming() {
         flex items-center justify-center gap-10
         text-2xl font-bold  
         "
-        onClick={()=>{
-          Navigate('/homepage')
-        }}
+          onClick={() => {
+            Navigate("/homepage");
+          }}
         >
           Continue with google
-          <img src="/google.png" className="w-10 "/>
+          <img src="/google.png" className="w-10 " />
         </button>
       </main>
     </>
