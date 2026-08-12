@@ -31,7 +31,7 @@ export default function Welcoming() {
         <section className="w-full flex flex-col justify-center items-center gap-3 ">
           <p className=" z-100 text-3xl md:text-7xl opacity-100 text-[#242424] font-bold">
             Welcome to Chat Egy
-          </p>
+          </p> grip
           <p className="text-lg md:text-3xl text-[#000000]">
             Learn.Ask.Achieve
           </p>
